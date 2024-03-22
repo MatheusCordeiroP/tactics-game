@@ -1,0 +1,21 @@
+/* battle-screen.component.scss */
+.grid-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.grid-cell {
+  width: 32px;
+  height: 32px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.grid-index {
+  font-size: x-small;
+  position: relative;
+}

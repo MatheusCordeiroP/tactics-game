@@ -1,0 +1,12 @@
+<!-- battle-screen.component.html -->
+<div class="grid-container">
+  @for (row of grid; track $index) {
+  <div class="grid-row">
+    @for (column of row; track $index) {
+    <div class="grid-cell">
+      <div class="grid-index">{{ column.x }}, {{ column.y }}</div>
+    </div>
+    }
+  </div>
+  }
+</div>
