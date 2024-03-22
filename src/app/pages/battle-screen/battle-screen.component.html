@@ -4,9 +4,52 @@
   <div class="grid-row">
     @for (column of row; track $index) {
     <div class="grid-cell">
-      <div class="grid-index">{{ column.x }}, {{ column.y }}</div>
+      <!-- <div class="grid-index">{{ column.x }}, {{ column.y }}</div> -->
+      <div class="one-unit">
+        <img [src]="blueTeam.pegasus" width="32px" />
+      </div>
+      <!-- <div class="two-units">
+        <img class="bottom-left" [src]="blueTeam.cleric" width="32px" />
+        <img class="top-right" [src]="blueTeam.archer" width="32px" />
+      </div> -->
     </div>
     }
   </div>
   }
+</div>
+
+<div>
+  <img [src]="redTeam.archer" />
+  <img [src]="redTeam.cavalier" />
+  <img [src]="redTeam.cleric" />
+  <img [src]="redTeam.fighter" />
+  <img [src]="redTeam.guardian" />
+  <img [src]="redTeam.mage" />
+  <img [src]="redTeam.monk" />
+  <img [src]="redTeam.pegasus" />
+  <img [src]="redTeam.rogue" />
+</div>
+
+<div>
+  <img [src]="blueTeam.archer" />
+  <img [src]="blueTeam.cavalier" />
+  <img [src]="blueTeam.cleric" />
+  <img [src]="blueTeam.fighter" />
+  <img [src]="blueTeam.guardian" />
+  <img [src]="blueTeam.mage" />
+  <img [src]="blueTeam.monk" />
+  <img [src]="blueTeam.pegasus" />
+  <img [src]="blueTeam.rogue" />
+</div>
+
+<div>
+  <img [src]="greenTeam.archer" />
+  <img [src]="greenTeam.cavalier" />
+  <img [src]="greenTeam.cleric" />
+  <img [src]="greenTeam.fighter" />
+  <img [src]="greenTeam.guardian" />
+  <img [src]="greenTeam.mage" />
+  <img [src]="greenTeam.monk" />
+  <img [src]="greenTeam.pegasus" />
+  <img [src]="greenTeam.rogue" />
 </div>

@@ -9,13 +9,52 @@
 }
 
 .grid-cell {
-  width: 32px;
-  height: 32px;
-  border: 1px solid black;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+  border: 1px solid #27492f62;
+  background-color: #4a8657;
   box-sizing: border-box;
 }
 
 .grid-index {
   font-size: x-small;
   position: relative;
+}
+
+.one-unit {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.two-units {
+  width: 48px;
+  height: 48px;
+  position: relative; /* Enable absolute positioning for child elements */
+  overflow: hidden; /* Clip content that overflows the container */
+}
+
+.bottom-left,
+.top-right {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+
+.bottom-left {
+  bottom: 1px;
+  left: 1px;
+  z-index: 2; /* Bring to front for overlapping */
+}
+
+.top-right {
+  top: 1px;
+  right: 1px;
+  z-index: 1; /* Ensure partial overlap by placing behind bottom-left */
 }
