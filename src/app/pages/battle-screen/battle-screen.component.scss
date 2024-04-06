@@ -18,6 +18,12 @@
   border: 1px solid #27492f62;
   background-color: #4a8657;
   box-sizing: border-box;
+  position: relative; /* Enable absolute positioning for child elements */
+}
+
+.terrain-river {
+  border: 1px solid #372d6062;
+  background-color: #435fa5;
 }
 
 .grid-index {
@@ -36,7 +42,6 @@
 .two-units {
   width: 48px;
   height: 48px;
-  position: relative; /* Enable absolute positioning for child elements */
   overflow: hidden; /* Clip content that overflows the container */
 }
 
@@ -57,4 +62,39 @@
   top: 1px;
   right: 1px;
   z-index: 1; /* Ensure partial overlap by placing behind bottom-left */
+}
+
+.warning-overlay {
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+.walkable-overlay {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  bottom: 1px;
+  left: 1px;
+  z-index: 3;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(48, 128, 232, 0.563);
+}
+
+.attacking-overlay {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  bottom: 1px;
+  left: 1px;
+  z-index: 3;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(220, 19, 19, 0.563);
 }
